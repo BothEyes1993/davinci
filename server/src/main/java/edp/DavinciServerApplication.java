@@ -35,6 +35,8 @@ public class DavinciServerApplication {
     public static void main(String[] args) {
         System.setProperty("mail.mime.splitlongparameters", "false");
         SpringApplication.run(DavinciServerApplication.class, args);
+        System.out.print("ffffxxx::");
+        System.out.print(System.getenv("DAVINCI3_HOME"));
     }
 
     @Value("${jwtToken.secret:Pa@ss@Word}")
