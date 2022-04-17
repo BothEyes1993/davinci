@@ -38,7 +38,10 @@
     "test": "cross-env NODE_ENV=test jest --coverage",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "prettify": "prettier --write"
+    "prettify": "prettier --write",
+    "tt":"tslint --fix -c ./tslint.json 'app/containers/Viz/actions.ts'",
+    "ee":"eslint --fix 'server/index.js'",
+    "jj":"prettier --write 'app/assets/json/echartsThemes/default.project.json'"
   },
   "lint-staged": {
     "*.js": [
